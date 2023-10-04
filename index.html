@@ -6,16 +6,25 @@
     <title>Penguin Fashion</title>
     <!-- link of tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style>
+        .font-bebasNeue {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+    </style>
 </head>
-<body class="font-sans">
+<body>
     <!-- header section -->
-    <header>
+    <header class="bg-[#FFFBF0]">
         <!-- nav section -->
-        <nav class="flex justify-between mx-32 mt-12 mb-4">
+        <nav class="flex flex-col md:flex-row justify-between ml-5 mx-auto md:mx-32 pt-12 mb-10 md:mb-4">
             <div>
                 <img class="w-64" src="icons/logo.png" alt="">
             </div>
-            <ul class="flex gap-14">
+            <ul class="flex gap-6 md:gap-14">
                 <li><a class="text-[#3C3C3C] font-sans text-base font-medium" href="#">Home</a></li>
                 <li><a class="text-[#3C3C3C] font-sans text-base font-medium" href="#">Products</a></li>
                 <li><a class="text-[#3C3C3C] font-sans text-base font-medium" href="#">About Us</a></li>
@@ -24,38 +33,64 @@
         </nav>
 
         <!-- header section -->
-        <section class="flex justify-between items-center mx-32 mb-16">
-            <div>
-                <h1 class="text-7xl font-semibold text-[#363958] uppercase mb-3">
+        <section class="flex flex-col md:flex-row justify-between items-center mx-auto md:mx-32 pb-16 space-y-8 md:space-y-0">
+            <div class="space-y-3">
+                <h1 class="text-4xl md:text-7xl font-normal text-[#363958] uppercase font-bebasNeue">
                    <span class="text-[#FABE4C]">
                     Be the Penguins
                    </span>
                    <br> of Winter
                 </h1>
-                <p class="text-[#3E3E3E] text-base font-normal w-80 mb-2">
+                <p class="text-[#3E3E3E] text-base font-normal w-80  font-sans">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </p>
-                <button class="px-9 py-3 bg-[#A4BC46] rounded-xl text-white text-base font-medium ">
+                <button class="px-9 py-3 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl text-white text-base font-medium font-sans ">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline text-white">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
                       </svg>
                       Shop Now
                 </button>
             </div>
-            <div>
-                <img src="images/model.png" alt="">
+            <div class="">
+                <img class="w-80 md:w-auto" src="images/model.png" alt="">
             </div>
         </section>
     </header>
 
     <!-- main-section -->
     <main>
-        <!-- cart heading section -->
-        <div class="mt-12 ml-32 mb-5">
-            <h1 class="text-[#363958] font-semibold text-5xl uppercase" >
+        <!-- product heading section -->
+        <div class="text-center md:text-left mt-12 md:ml-32 mb-5">
+            <h1 class="text-[#363958] font- text-5xl uppercase font-bebasNeue" >
                 Women Jacket
             </h1>
         </div>
+
+        <!-- product section -->
+        <!-- <section>
+            <div class="w-96">
+                <div>
+                    <img src="images/jacket-1.png" alt="">
+                </div>
+                <h1>
+                    Yellow Coat Jacket
+                </h1>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <div>
+                    <p>
+                     $242
+                    </p>
+                    <button class="px-9 py-3 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl text-white text-base font-medium ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                          </svg>
+                          Shop Now
+                    </button>
+                </div>
+            </div>
+        </section> -->
     </main>
 </body>
 </html>
